@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "css-loader": "^5.2.6",
+    "image-webpack-loader": "^7.0.1",
+    "style-loader": "^3.0.0"
+  }
+}
