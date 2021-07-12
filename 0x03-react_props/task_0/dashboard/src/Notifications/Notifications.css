@@ -1,0 +1,14 @@
+.Notifications {
+	padding: 1px 12px;
+	display: flex;
+	flex-direction: column;
+	border: 2px dashed var(--holberton-red);
+}
+
+li[dataPriority='default'] {
+    color: blue;
+
+  }
+li[dataPriority='urgent'] {
+    color: red;
+  }

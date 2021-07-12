@@ -1,0 +1,7 @@
+.App-footer {
+    display: flex;
+    justify-content: center;
+    flex: 0;
+    font-style: italic;
+    border-top: 3px solid var(--holberton-red);
+  }

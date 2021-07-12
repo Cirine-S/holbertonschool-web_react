@@ -1,0 +1,10 @@
+:root {
+  --holberton-red: #e0354b;
+}
+
+.App {
+  height: 95vh;
+  display:flex;
+  flex-direction: column;
+}
+
