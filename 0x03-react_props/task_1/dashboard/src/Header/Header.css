@@ -1,0 +1,10 @@
+.App-header {
+    display: flex;
+    color: var(--holberton-red);
+    border-bottom: 3px solid var(--holberton-red);
+  }
+  
+  .App-header > img {
+    object-fit: contain;
+    height: 100px;
+  }

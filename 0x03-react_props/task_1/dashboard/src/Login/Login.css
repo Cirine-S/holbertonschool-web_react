@@ -1,0 +1,13 @@
+.Login-body {
+    padding: 36px 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    align-items: stretch;
+  }
+  
+  
+  .Login-body input {
+    margin: 0 16px 0 8px;
+  }
+  
