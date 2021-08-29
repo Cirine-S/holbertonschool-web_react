@@ -1,0 +1,26 @@
+table {
+  width: 100%;
+}
+
+thead tr:first-of-type th {
+  text-align: center;
+}
+
+th, td {
+  padding: 0.25rem;
+  border: 1px solid lightgray;
+}
+
+th {
+  text-align: left;
+}
+
+thead tr:last-of-type th:first-of-type,
+tbody tr td:first-of-type {
+  border-right: 0;
+}
+
+thead tr:last-of-type th:last-of-type,
+tbody tr td:last-of-type {
+  border-left: 0;
+}
