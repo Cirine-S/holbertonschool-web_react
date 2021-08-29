@@ -1,0 +1,10 @@
+/* Utils */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+  margin: 0;
+  height: .2rem;
+  background-color: #E0344B;
+}
