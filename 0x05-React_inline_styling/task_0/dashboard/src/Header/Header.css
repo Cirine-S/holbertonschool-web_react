@@ -1,0 +1,16 @@
+/* Header CSS */
+.App-header {
+  display: flex;
+  align-items: center;
+  height: 25vh;
+}
+
+.App-header img {
+  height: 100%;
+}
+
+.App-header h1 {
+  color: #E0344B;
+  font-size: 2.5rem;
+  margin-left: 1rem;
+}
