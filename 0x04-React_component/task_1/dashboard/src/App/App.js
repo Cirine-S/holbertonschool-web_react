@@ -9,6 +9,27 @@ import Notifications from '../Notifications/Notifications';
 import CourseList from '../CourseList/CourseList';
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.handleLogout = this.handleLogout.bind(this);
+  }
+
+  componentDidMount() {
+      window.addEventListener("keydown", this.handleLogout);
+  }
+
+  componentWillUnmount() {
+      window.removeEventListener("keydown", this.handleLogout);
+  }
+
+  handleLogout (event) {
+      if (event.ctrlKey && event.key === 'h') {
+          event.preventDefault();
+          alert("Logging you out");
+          this.props.logOut();
+      }
+    }
+
   render() {
     const { isLoggedIn } = this.props;
 
@@ -45,11 +66,13 @@ class App extends Component {
 }
 
 App.propTypes = {
-  isLoggedIn: PropTypes.bool
+  isLoggedIn: PropTypes.bool,
+  logOut: PropTypes.func
 };
 
 App.defaultProps = {
-  isLoggedIn: false
+  isLoggedIn: false,
+  logOut: () => undefined
 };
 
 export default App;
