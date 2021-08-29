@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { expect } from 'chai';
+import { StyleSheetTestUtils } from 'aphrodite';
 
 import App from './App';
 import Notifications from '../Notifications/Notifications';
@@ -10,10 +11,18 @@ import Footer from '../Footer/Footer';
 import CourseList from '../CourseList/CourseList';
 
 describe('App', () => {
-    test('renders without crashing', () => {
-      const wrapper = shallow(<App />);
-      expect(wrapper.exists());
-});
+  beforeEach(() => {
+    StyleSheetTestUtils.suppressStyleInjection();
+  });
+
+  afterEach(() => {
+    StyleSheetTestUtils.clearBufferAndResumeStyleInjection();
+  });
+
+  test('renders without crashing', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.exists());
+  });
   test('renders Notifications component', () => {
     const wrapper = shallow(<App />);
     const notifs = wrapper.find(Notifications);
